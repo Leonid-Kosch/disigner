@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+}
+.scroll-none {
+    overflow-y: hidden;
+}
+nav {
+    width: 150px;
+    height: 100%;
+    background: #45015d;
+    position: fixed;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    top: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+.nav_active {
+    left: 0;
+}
+nav h3 {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+nav a {
+   color: white;
+   padding: 10px 0 10px 25px;
+   display: block;
+   text-decoration: none;
+   font-weight: bold;
+   transition: all 0.7s;
+}
+nav a:hover {
+    background: white;
+    color: #45015d;
+    transition: all 0.5s;
+}
+button[type="menu"] {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    position: fixed;
+    box-shadow: 0 5px 10px #45015d6c;
+    background: white;
+    padding: 0;
+    top: 10px;
+    left: 10px;
+    display: none;
+    z-index: 3;
+    transition: all 0.5s;
+}
+button span {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #45015d;
+    left: 50%;
+    margin-left: -20px;
+    transition: all 0.5s;
+}
+button span:nth-child(1) {
+    top: 15px;
+}
+button span:nth-child(2) {
+    top: 50%;
+    margin-top: -1px;
+}
+button span:nth-child(3) {
+    bottom: 15px;
+}
+.menu-btn_active span:nth-child(1) {
+    transform: rotate(-45deg);
+    margin-top: 9px;
+}
+.menu-btn_active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-btn_active span:nth-child(3) {
+    transform: rotate(45deg);
+    margin-bottom: 8px;
+}
+h1 {
+    font-weight: 400;
+    font-size: 64px;
+}
+main {
+    margin: 80px 40px 0 360px;
+}
+h2 {
+   font-weight: 400;
+   font-size: 48px;
+   margin: 10px 0; 
+   color: #45015d;
+}
+hr {
+    background: #45015d;
+    height: 8px;
+    border-radius: 5px;
+}
+.showcase img {
+    width: 45%;
+    min-width: 300px;
+    margin: 5px;
+    border-radius: 10px;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+.showcase img:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+.services {
+    margin: 50px 0 0 0;
+}
+.desingers {
+    margin: 50px 0 0 0;
+}
+.desingers__member {
+    display: inline-block;
+    width: 30%;
+    min-width: 300px;
+    margin: 10px;
+    text-align: left;
+}
+.desingers__member img {
+    width: 100%;
+    border-radius: 10px;
+}
+.desingers__member p {
+    font-size: 18px;
+}
+.desingers__member div {
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+}
+.position {
+    color: gray;
+}
+ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    background-color: #e7e7e7; 
+    text-align: center;
+    border-radius: 10px;
+    width: 45%;
+    min-width: 300px;
+    margin: 0 10px 0 10px;
+}
+li {
+    border-bottom: solid 1px gray;
+    border-radius: 10px;
+    padding: 16px 0;
+}
+.title {
+    padding: 26px 0;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.packages__tariff_basic .title {
+    background: #45015d;
+}
+.price {
+    font-size: 22px;
+}
+.price span {
+    display: block;
+    font-size: 12px;
+    color: gray;
+}
+ul button {
+    border-radius: 10px;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    transition: all 0.4s;
+    outline: none;
+}
+.packages__tariff_basic button {
+    background-color: #45015d;
+    border: solid #45015d 1px;
+}
+.packages__tariff_basic button:hover {
+    color: #45015d;
+    background: transparent;
+}
+.packages__tariff_pro .title {
+    background: #ff6219;
+}
+.packages__tariff_pro button {
+    background: #ff6219;
+    border: solid 1px #ff6219;
+}
+.packages__tariff_pro button:hover {
+    color: #ff6219;
+    background-color: transparent;
+}
+input, textarea, form button {
+    width: 95%;
+    border-radius: 10px;
+    outline: none;
+    border: solid 1px #45015d;
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    box-shadow: 0 2.5px 5px #45015d65;
+    transition: all 0.5s;
+    min-width: 300px;
+}
+input:focus, textarea:focus {
+    box-shadow: 0 0 15px #45015d;
+}
+form button {
+    background: #45015d;
+    color: white;
+}
+form button:hover {
+    color: #45015d;
+    background: transparent;
+}
+input[type="checkbox"] {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    outline: none;
+    box-shadow: none;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+footer {
+    background: #45015d;
+    padding: 50px 0 50px 25px;
+    color: white;
+    z-index: 2;
+    position: relative;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
